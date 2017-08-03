@@ -1,0 +1,69 @@
+# TokoBuku
+Binar Talent Pool - Assessment test Andorid
+
+Wins Bhakti P
+wisnubhakti@gmail.com
+
+
+1. RelativeLayout
+
+
+2. AndroidManifest.xml
+
+
+3. A.onCreate() -> A.onStart() -> A.onResume() -> A.onPause() -> B.onCreate() -> B.onStart() -> B.onResume()
+
+
+4.  Intent intent = new Intent(this, MActivity.class);
+    startActivity(intent);
+
+
+5. Muncul Toast Message Finishing
+
+
+6. penulisan permission ada di dalam <application> harusnya di luar application seperti berikut
+
+<?xml version=​"1.0" ​encoding=​"utf-8"​?>
+<manifest ​...>
+<uses-permission ​android​:name=​"android.permission.CALL_USER" ​/>
+
+<application
+​...>
+</application​>
+</manifest​>
+
+
+7. 
+private boolean isAnagram(String first,String second){
+        boolean isAnagram = false;
+        
+        if (first.length() == second.length()) {
+            char[] mFirst = first.toCharArray();
+            char[] mSecond = second.toCharArray();
+            Arrays.sort(mFirst);
+            Arrays.sort(mSecond);
+            isAnagram = Arrays.equals(mFirst, mSecond);
+        }
+        
+        return  isAnagram;
+    }
+
+8. 
+
+ private String replaceMultiChar(String input){
+
+        char[] mInput = input.toCharArray();
+        String mResult="";
+
+        for(int i=0;i<mInput.length;i++){
+            if (i>0){
+                if (mInput[i]!=mInput[i-1]) {
+                    mResult += mInput[i];
+                }
+            }else {
+                mResult += mInput[i];
+            }
+        }
+        
+        return mResult;
+    }
