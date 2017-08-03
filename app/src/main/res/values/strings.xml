@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TokoBuku</string>
+    <string name="menu_add_item">Kelola Buku</string>
+</resources>
