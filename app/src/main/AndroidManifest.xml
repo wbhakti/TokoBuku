@@ -24,11 +24,11 @@
         <activity
             android:name=".LoginActivity_"
             android:screenOrientation="userPortrait"></activity>
-        
-        <activity android:name=".AddBookActivity"
+
+        <activity android:name=".AddBookActivity_"
             android:screenOrientation="userPortrait"
             android:label="@string/menu_add_item"
-            android:parentActivityName=".AddBookActivity" >
+            android:parentActivityName=".AddBookActivity_" >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
